@@ -175,7 +175,7 @@ def main(model_dir, input_path=None, output_path=None, device=None, args=None):
         det_model = detection_model,
         save_ext='png',
         use_parse=True,
-        model_dir='weights',
+        # model_dir='weights',
         device=device)
 
     # -------------------- start to processing ---------------------
