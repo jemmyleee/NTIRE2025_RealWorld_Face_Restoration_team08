@@ -1,4 +1,4 @@
-pytorch-lightning==1.8.6
+pytorch-lightning
 torch
 tqdm
 bcolz-zipline
@@ -9,7 +9,7 @@ mxnet
 opencv-python
 einops
 lmdb
-numpy<=1.23.5
+numpy
 opencv-python
 pyyaml
 scikit-learn
@@ -22,7 +22,7 @@ yapf
 basicsr>=1.4.2
 facexlib>=0.2.5
 tb-nightly
-torchaudio==2.2.2
+torchaudio
 xformers
 omegaconf==2.3.0
 accelerate==0.28.0
