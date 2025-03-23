@@ -19,7 +19,7 @@
             └── parsing_parsenet.pth
       ```
 
-## How to add your model to this baseline?
+## How to use my model?
 ### Environments
 
 ```sh
@@ -28,7 +28,10 @@ conda activate Team08
 cd NTIRE2025_RealWorld_Face_Restoration_team08
 pip install -r models/team08_good/requirements.txt
 ```
-
+### run
+```bash
+CUDA_VISIBLE_DEVICES=0 python test.py --valid_dir [path to val data dir] --test_dir [path to test data dir] --save_dir [path to your save dir] --model_id 8
+```
 
 ## How to eval images using NR-IQA metrics and facial ID?
 
