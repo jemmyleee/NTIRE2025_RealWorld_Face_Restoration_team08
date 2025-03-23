@@ -28,6 +28,14 @@ conda activate Team08
 cd NTIRE2025_RealWorld_Face_Restoration_team08
 pip install -r models/team08_good/requirements.txt
 ```
+### Importain
+you need go to
+/home/username/miniconda3/envs/Team08/lib/python3.10/site-packages/basicsr/data/degradations.py
+
+modify line8
+from torchvision.transforms.functional_tensor import rgb_to_grayscale
+to 
+from torchvision.transforms.functional import rgb_to_grayscale
 ### run
 ```bash
 CUDA_VISIBLE_DEVICES=0 python test.py --valid_dir [path to val data dir] --test_dir [path to test data dir] --save_dir [path to your save dir] --model_id 8
