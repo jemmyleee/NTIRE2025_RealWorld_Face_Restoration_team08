@@ -134,7 +134,7 @@ def main(model_dir, input_path=None, output_path=None, device=None, args=None):
 
     restorer = GFPGANer(
         model_path=model_path,
-        upscale=2,
+        upscale=1,
         arch=arch,
         channel_multiplier=channel_multiplier,
         bg_upsampler=bg_upsampler)
